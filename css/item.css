@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  #loader {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    z-index: 99999;  
+    background: #131313;
+  }
+  
+  #loader p {  
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+  
+  .column {
+    float: left !important;
+    width: 25% !important;
+    padding: 0 10px !important;
+  }
+  
+  .row {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+  
+  .row:after {
+    content: "" !important;
+    display: table !important;
+    clear: both !important;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100% !important;
+      display: block !important;
+      margin-bottom: 20px !important;
+    }
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: left;
+    background-color: #f1f1f1;
+    height: 50vh;
+    width: 100vh;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-text p {
+    font-size: 2vh;
+    color: #333;
+}
+.card-text {
+    max-width: 50vh;
+}
+.card-content {
+    display: flex;
+    align-items: center;
+}
+ 
+img {
+    width: 40vh;
+    margin-right: 20px;
+}
+  
+#items {
+    font-size: 4vh;
+    margin-bottom: 1vh;
+}
+
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0 !important;
+    padding: 0;
+    overflow: hidden;
+    background-color: #131313;
+  }
+  
+  li {
+    float: right;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  li p{
+    font-weight: 700;
+    margin-right: 10px;
+    border-radius: 10%;
+    background-color: whitesmoke;
+    display: block;
+    color: #111;
+    text-align: center;
+    padding: 1vh 2vh 1vh 2vh;
+    text-decoration: none;
+    
+  }
+  
+  li:hover {
+    transform: scale(1.025);
+    cursor: pointer;
+  }
